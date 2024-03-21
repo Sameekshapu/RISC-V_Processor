@@ -28,26 +28,26 @@ module INST_MEM(
             Memory[6] = 8'h39;
             Memory[5] = 8'h03;
             Memory[4] = 8'hb3;
-            // Setting 32-bit instruction: mul t0, s4, s5 => 0x035a02b3
-            Memory[11] = 8'h03;
-            Memory[10] = 8'h5a;
-            Memory[9] = 8'h02;
+            // Setting 32-bit instruction: or a7, a4, a5
+            Memory[11] = 8'h00;
+            Memory[10] = 8'hf7;
+            Memory[9] = 8'h68;
             Memory[8] = 8'hb3;
             // Setting 32-bit instruction: xor t3, s6, s7 => 0x017b4e33
             Memory[15] = 8'h01;
             Memory[14] = 8'h7b;
             Memory[13] = 8'h4e;
             Memory[12] = 8'h33;
-            // Setting 32-bit instruction: sll t4, s8, s9
-            Memory[19] = 8'h01;
-            Memory[18] = 8'h9c;
-            Memory[17] = 8'h1e;
+          // Setting 32-bit instruction: and t6, a2, a3
+            Memory[19] =8'h00;
+            Memory[18] = 8'hd6;
+            Memory[17] = 8'h7f;
             Memory[16] = 8'hb3;
             // Setting 32-bit instruction: srl t5, s10, s11
-            Memory[23] = 8'h01;
-            Memory[22] = 8'hbd;
-            Memory[21] = 8'h5f;
-            Memory[20] = 8'h33;
+          Memory[23] = 8'h01;
+          Memory[22] = 8'hbd;
+          Memory[21] = 8'h2f;
+          Memory[20] = 8'h33;
             // Setting 32-bit instruction: and t6, a2, a3
             Memory[27] = 8'h00;
             Memory[26] = 8'hd6;
