@@ -18,10 +18,10 @@ module CONTROL(
                     else if(funct7 == 32)
                     alu_control = 3'b001; // SUB
                 end
-                6: alu_control = 3'b010; // OR
-                7: alu_control = 3'b011; // AND
+                6: alu_control = 3'b011; // OR
+                7: alu_control = 3'b010; // AND
 				4: alu_control = 3'b100; // XOR
-              2:alu_control=3'b101;//comp
+                2:alu_control=3'b101;//comp
               //default:alu_control=
             endcase
 
